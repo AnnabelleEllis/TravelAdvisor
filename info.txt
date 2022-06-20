@@ -1,0 +1,117 @@
+API - Application Programming Interface
+
+The three main components of an API are Request, Response, and Resource.
+You would make a request to a server. 
+The server will return a response that will contain data regarding a resource.
+
+Anatomy of an API Request
+Enpoint
+Method
+Header 
+Body
+
+Anatomy of API Response
+Header 
+Body
+
+
+HTTP is the protocol API uses to to send requst and recieve responces. 
+9 HTTP Methods:
+GET
+POST
+DELETE
+PATCH
+PUT
+HEAD
+TRACE
+CONNECT
+OPTIONS
+
+
+The main difference between PATCH and PUT is that PATCH is used to partially modify a resource, whereas PUT is used to update the entire resource on the server.
+
+When the server returns a response, a three-digit number is also sent as a part of the response. This three-digit number is also known as the "status code". Status codes help in identifying the type of the response:
+
+Name	        Range of status codes
+Informational	100-199
+Successful	    200-299
+Redirection	    300-399
+Client error	400-499
+Server error	500-599
+
+
+What is a REST API?
+A REST API is an API that follows the design principles of the REST (or REpresentational State Transfer) architecture.
+
+REST APIs communicate via HTTP requests to perform CRUD (or Create, Read, Update, and Delete) operations.
+
+Name	HTTP method
+Create	POST
+Read	GET
+Update	PUT, PATCH
+Delete	DELETE
+
+
+Anatomy of a HTTP Request -  HTTP REQUEST HEADERS
+
+A request header can contain information about 
+    - the type of the request, 
+    - the URL to which the request is being made, 
+    - authentication details, 
+    - cache policy 
+    - as well as the user agent.
+
+Types of Header
+    1. Request Header [contain more information about the resource to be fetched, or about the client requesting the resource.]
+        - Accept
+        - Accept-Encoding
+        - Authorization
+
+    2. Accept-Language
+        - Cache Control
+
+    3. Response Header [hold additional information about the response, like its location or about the server providing it.]
+    4. Representation Header [contain information about the body of the resource, like its MIME type, or encoding/compression applied.]
+        - Content-Type
+        - Content-Encoding
+        - Content-Language
+        - Content-Location
+
+    5. Payload Header [ contain representation-independent information about payload data, including content length and the encoding used for transport.]
+        - Content-length
+        - Content-Range
+
+######################################################################## 
+Organize the information Below.
+
+
+Accept HTTP header
+    The Accept HTTP header informs the server about the type of data that the client can understand.
+    Accept: text/html
+    Accept: application/xhtml+xml
+    Accept: image/png
+
+
+Accept-Encoding HTTP header
+    The Accept-Encoding HTTP header informs the server about the type of encoding the client is able to understand.
+    JSON
+    Accept-Encoding: gzip
+    Accept-Encoding: gzip, compress
+
+Authorization HTTP header
+    The Authorization HTTP header is used to pass credentials which lets the server authenticate a client and provide access to protected resources.
+    JSON
+    Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l
+    Authorization: Bearer eyYWxhZGRpbjpvcGVuc2VzYW1l
+
+Accept-Language HTTP header
+    The Accept-Language HTTP header lets the server know which local is preferred and understood by the client.
+    JSON
+    Accept-Language: fr-CH
+    Accept-Language: en-US
+
+Cache-Control HTTP header
+    The Cache-Control HTTP header holds caching instructions for the client and the server.
+    JSON
+    Cache-Control: stale-while-revalidate=60
+    Cache-Control: no-cache
