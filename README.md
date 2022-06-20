@@ -15,6 +15,10 @@ User Interface Material UI, Tailwind CSS, etc.
 Redux TOolKits
 Charts.js
 
+# Pick-Up
+
+Continue the with updating info.txt
+https://rapidapi.com/learn/rest-apis/rest-apis-for-experts/different-types-of-http-headers
 
 
 # Getting Started with Create React App
