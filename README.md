@@ -20,6 +20,9 @@ Charts.js
 Continue the with updating info.txt
 https://rapidapi.com/learn/rest-apis/rest-apis-for-experts/different-types-of-http-headers
 
+Add the materialUI imports to App.js @21:00  minutes
+https://www.youtube.com/watch?v=GDa8kZLNhJ4&list=WL&index=67&t=1s
+
 
 # Getting Started with Create React App
 
