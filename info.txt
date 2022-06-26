@@ -66,9 +66,8 @@ Types of Header
         - Accept
         - Accept-Encoding
         - Authorization
-
-    2. Accept-Language
-        - Cache Control
+        - Accept-Language
+            * Cache Control
 
     3. Response Header [hold additional information about the response, like its location or about the server providing it.]
     4. Representation Header [contain information about the body of the resource, like its MIME type, or encoding/compression applied.]
@@ -115,3 +114,16 @@ Cache-Control HTTP header
     JSON
     Cache-Control: stale-while-revalidate=60
     Cache-Control: no-cache
+
+
+
+
+Content-Length
+    The Content-Length HTTP header indicates the size of the message body in bytes.
+    JSON
+    Content-Length: 3495
+
+Content-Range
+    The Content-Range HTTP header indicates the position of a partial message in a full body message.
+    JSON
+    Content-Range: bytes 500-1000/*
